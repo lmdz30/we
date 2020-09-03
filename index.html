@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>52音频</title>
+	
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			a{text-decoration:none;}
+			input{outline:none;}
+			ul li{list-style:none;float:left;}
+			img{vertical-align: top;}
+			
+			#head{
+				width:100%;
+				height:95px;
+				background:black;	
+				
+			}
+			.logo{
+				width:160px;
+				height:95px;
+				float:left;
+				
+			}
+			.first{
+				width:1200px;
+				height:95px;
+			/*	background:navajowhite;*/
+				margin: 0 auto;
+				
+				
+				
+				
+			}
+			.first .pc1{
+				width:200px;
+				height:60px;
+				margin-top:16px;
+				float:left;
+				
+				
+			}
+			.first .menu li{
+			/*	background: #0000FF;*/
+				width:100px;
+				padding:2px 17px 7px;
+				text-align:center;
+				height:41px;
+				line-height:41px;
+				margin-top:23px;
+				
+			}
+			.menu li .music{
+				color:#33FF99;
+				
+			}
+			.menu li a{
+				color:white;
+				font-size:16px;
+				font-family: "楷体";
+			}
+			.menu{
+				width:1040px;height:95px;
+				float:left;
+			}	
+			.menu input{
+				width:220px;
+				height:36px;
+				margin-top:29px;
+				border-radius:8px;
+				text-indent:1em;
+				
+			}
+			.menu span{
+				display:inline-block;
+				width:50px;
+				
+				border-right:2px solid tan;
+				position:relative;
+				left:-25px;
+			}
+			.menu span a{
+				display:block;
+				font-size:14px;
+				color:white;
+				text-align:center;
+				margin:0;
+			}
+			.menu span a:hover{
+				color:red;
+			}
+			.menu .pc2{
+				position:relative;
+				top:33px;
+				left:-50px;
+			}
+			.menu .sg{
+				border-right:0;
+			}
+			/*.menu .pc2 img:hover{
+				width:30px;
+			} */
+			.second{
+				width:100%;
+				height:50px;
+				background:rgba(216,216,216,.2);
+				
+			}
+			.second .nav{
+				width:1200px;
+				height:50px;
+			/*	background:red;*/
+				margin:0 auto;
+			}
+			.nav li{
+				width:100px;
+				height:50px;
+				position:relative;
+				left:250px;
+				text-align:center;
+				line-height:50px;;	
+			}		
+		    .songlist{
+				width:100%;
+				height:565px;
+			/*	background:yellow;*/
+				float:left;
+				margin-top:20px;
+				
+			}
+			.songlist .songlist-left{
+				width:1200px;
+				height:550px;
+				/*background:magenta;*/
+				margin:0 auto;
+			}
+			.list-left  .title{
+				display: inline-block;
+				font-style:normal;
+				width:790px;
+				height:38px;
+				margin-top:10px;
+				margin-bottom: 25px;
+				color:#333333;
+				
+			}
+			.songlist-left .more{
+				display:inline-block;
+				padding:13px 15px 0;
+				font-size:14px;
+				color:#999999;
+				
+			}
+			.title span a{
+				font-size: 14px;
+				
+				
+			}
+			.title span{
+				position:relative;
+				right:-590px;
+			}
+			.list-left{
+				width:790px;
+				height:550px;
+				/*background: thistle;*/
+				float:left;
+				
+				
+			}
+			 .list-right{
+				width:350px;
+				min-height:550px;
+				/*background: peru;*/
+				float:left;
+				position: relative;
+				left:60px;
+			}
+			.list-right .title-right{
+				display: inline-block;
+				font-style:normal;
+				width:350px;
+				height:38px;
+				margin:10px 0 20px 0;
+				line-height: 20px;;
+				color:#333333;
+			}
+			.list-right .more{
+				display:inline-block;
+				padding:13px 15px 0;
+				font-size:14px;
+				color:#999999;
+			}
+			.list-left  img{
+				width:170px;
+				height:170px;
+				
+				
+			}
+			.list-left dl{
+				float:left;
+				width:170px;
+				margin-right:36px;
+				
+				
+			}
+			.list-left dd{
+				margin:10px 0 0;
+				width:170px;
+				height:45px;
+				font-size:14px;
+				font-family: sans-serif;
+				color:black;
+			/*	font-weight:bold;*/
+				/*background: red;
+				position:relative;
+				font-size:16px;
+				top:-184px;
+				padding-top: 125px;
+				display: none;*/
+				}
+			.list-left .lastone{
+				margin-right:0;
+			}	
+			.list-left .lastsecond{
+				margin-top:25px;	
+			}
+			.list-left .lastsecond-last{
+				/*margin-right:0;
+				margin-top:25px;*/
+				margin:25px 0;
+			}
+			.list-right .tag,.tag-last{
+				display: block;
+				width:100px;
+				height:40px;
+				background: white;
+				border-radius:40px;
+				box-shadow: 0 0 10px #111B25;		
+				text-align: center;
+				line-height: 40px;
+				color:black;
+				margin:0 24px 15px 0;
+				}
+			.list-right .tag-last{
+					margin-right:0;
+				}
+			.list-right .title-botton{
+				display: inline-block;
+				font-style:normal;
+				width:350px;
+				height:38px;
+				margin:30px 0 20px 0;
+				line-height: 25px;;
+				color:#333333;
+				
+				}
+			.list-right .tah{
+					width:60px;
+					height:60px;
+					background: greenyellow;
+					margin:0 36px 34px 0;
+					border-radius:100%;
+					box-shadow:0 0 10px black;
+				}
+			.list-right .lasth{
+					margin:0 0 26px 0;
+				}
+			.list-right .tah img{
+					margin:18px 0 0 0;
+					opacity: .7;
+					width:25px;
+					height:25px;
+				}
+			.list-right .tah span{
+					display: block;
+					width:58px;
+					line-height: 20px;;
+					font-size:14px;
+					margin:20px 0 0 2px;
+					color:#333333;
+					text-align: center;
+				}	
+			#content .content-banner{
+					width:100%;
+					height:350px;
+					/*background: red;*/
+					float: left;
+					margin:20px 0 0;
+				}
+			.content-banner .banner{
+					width:700px;
+					 height:350px;
+					 margin:0 auto;
+					/* background: black;*/
+				}
+			.banner li{
+					width:30px;
+					height:30px;
+					background: rgba(123,123,123,.4);
+					margin:0 40px 0 0;
+					text-align: center;
+					line-height: 30px;
+					color:#FFFFFF;
+					position: relative;
+					left:200px;
+					top:-35px;
+					opacity: .8;
+					border-radius:100%;
+				}
+			.banner img{
+					display: block;
+					width:700px;
+					height:350px;
+					/*border-radius:40px;;*/
+				}
+			.banner .banner1{
+					
+					width:700px;
+					height:350px;
+					float:left;
+					overflow:hidden;
+				}
+			.banner-left{
+					width:250px;
+					height:350px;
+					
+					float: left;
+					margin:0 0 0 30px;
+					overflow: hidden;
+				}
+			.banner-left img{
+					width:250px;
+					height:350px;
+					border-bottom-left-radius:40px;
+					border-top-left-radius: 40px;
+					
+				}
+			.banner-one{
+				width:40px;
+				height:200px;
+				background: transparent;
+				float: left;
+				position: relative;
+				text-align: center;
+				line-height: 200px;
+				top:80px;
+				left:12px;
+			}
+			.banner-one .one-left{
+					font-size:40px;
+					color:gray;
+					opacity: .3;
+				}
+			.banner-one .one-right{
+					position: relative;
+					top:-200px;
+					right:-1286px;
+					font-size:40px;
+					color:gray;
+					opacity: .3;
+					background: transparent;
+				}
+			.one-left:hover{
+					font-size:50px;
+					color:black;
+					opacity: 1;
+				}
+			.one-right:hover{
+				font-size:50px;
+				color:black;
+				opacity: 1;
+			}
+			.banner-right{
+				width:250px;
+				height:350px;
+				/*background: yellow;*/
+				position: relative;
+				left:355px;
+				float: left;
+				top:-350px;
+			}
+			.banner-right img{
+				width:250px;
+				height:350px;
+				border-bottom-right-radius:40px;
+				border-top-right-radius: 40px;
+	}
+			.content-ranking{
+				float: left;
+				width:1200px;
+				height:610px;
+				/*background: red;*/
+				margin: 35px  74px 0 74px;
+			}
+			.content-ranking .rank{
+				display: inline-block;
+				width:1200px;
+				height:40px;
+				margin:0 0 25px;
+			}
+			.content-ranking h2{
+				width:375px;
+				height:65px;
+			/*	background: lightcoral;*/
+				font-style: normal;
+				}
+			.content-ranking .more{
+				display:inline-block;
+				font-style: normal;
+				font-size:14px;
+				padding:13px 15px 0;
+				
+			}
+			.content-ranking .rank-title{
+				width:375px;
+				height:543px;
+			/*	background: olive;*/
+				border:1px solid green;
+				float: left;
+				margin-right:20px;
+			}
+			.content-ranking .rank-nb1{
+				border:1px solid blue;
+				
+			}
+			.content-ranking .rank-nb1 .tupian1 i{
+				color:blueviolet;
+			}
+			.content-ranking  .rank-nb2  .tupian2 i{
+				color:mediumvioletred;
+			}
+			.content-ranking .rank-nb2{
+				border:1px solid red;
+			}	
+			.content-ranking .rank-title h2{
+				background: url(img/rank-news.png) repeat  top left;
+				line-height: 65px;
+			}
+			.content-ranking .rank-title .tupian2{
+				background: url(img/rank-hot.png) repeat  top left;
+				line-height: 65px;
+			}
+			.content-ranking .rank-title .tupian1{
+				background: url(img/rank-network.png) no-repeat  top left;
+				line-height: 65px;
+			}
+			.content-ranking .rank-title h2 .im{
+				width:30px;
+				height:30px;
+				margin:20px 0 0 230px;
+				
+			}
+			.content-ranking .rank-title h2 .ims{
+				margin-left:180px;
+				width:30px;
+				height:30px;
+				margin-top:20px;
+			
+			}
+			.content-ranking .rank-title h2 i{
+				padding:0 0 0 20px;
+				font-style: normal;
+				color:#5b9400;
+			}
+			.rank-title div{
+				width:375px;
+				height:76px;
+				margin-bottom: 10px;
+				float: left;
+				border-radius: 10px;;
+			}
+			.rank-nb div{
+				background: #04B141;
+			}
+			.rank-nb1 div{
+				background: #30AFD0;
+			}
+			.rank-nb2 div{
+				background: palevioletred;
+			}
+			.rank-title .rank-first{
+				margin-top:10px;
+			}
+			.rank-title  span{
+				display: block;
+				width:120px;
+				height:20px;
+				/*background: yellow;*/
+				line-height: 20px;
+				margin-left:265px;
+				font-size:14px;
+				color:#000000;
+			}	
+			.rank-title .shunxu{
+				width:22px;
+				height:22px;
+				font-size:18px;
+				font-weight:600;
+				margin:0 ;
+				padding:30px 0 0 20px;
+				float: left;
+			}
+			.rank-title .in{
+				width:50px;
+				height:50px;
+				position: relative;
+				left:12px;
+				top:14px;
+			}
+			.rank-title .name{
+				margin:-30px 0 0 110px;
+				color:#333333;
+				width:138px;
+				text-align: left;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				transition: all .5s;
+				font-style: normal;
+			}
+			.rank-title .name:hover{
+				font-weight: 700;
+				color:white;
+			}
+			.rank-title .name1{
+				color: #333333;
+				margin:0 0 0 115px;
+				text-align: left;
+			}
+			#footer{
+				width:100%;
+				height:395px;
+				background: #333333;
+				float: left;
+				margin:30px 0 0 0;
+			}
+			.mount{
+				width:1200px;
+				height:270px;
+			/*	background: #1FC0EF;*/
+				margin:0 auto;
+			}
+			#footer .left{
+				width:350px;
+				height:270px;
+				/*background: #555555;*/
+				
+				float:left
+			}
+			.left img{
+				margin-right:20px;
+				/*position: relative;
+				top:35px;*/
+				margin-top:90px;
+			}
+			.mount h4{
+				width:100px;
+				font-size: 18px;
+				color:white;
+				font-weight:600;
+				margin-top:40px;
+				margin-left:120px;
+				text-align: center;
+			}
+			.left{
+				margin-right:57px;
+			}
+			.mount .last{
+				margin-right:0;
+			}
+			.botton{
+				width:1200px;
+				height:110px;
+			/*	background: red;*/
+				margin-left:60px;
+			}
+			.botton p ,a{
+				text-align: center;
+				margin-top:15px;
+				color:#999999;
+				font-family: "PingFangSC-Regular";	
+		
+			}	
+			.botton p{
+				margin-left:-45px;
+				
+			}
+			#footer .left a{
+				display:inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="head">
+			<div class="first">
+				<div class="logo">
+					<img class="pc1" src="img/logo.png">
+				</div>
+				<div class="menu">
+					<ul>	
+						<li><a class="music" href="#">发现音乐</a></li>
+						<li><a href="#">随心听</a></li>
+						<li><a href="#">客户端</a></li>
+						<li><a href="#">VIP会员</a></li>
+						<li><a href="#">曲库</a></li>
+					</ul>
+				<input type="search" placeholder="搜素音乐、MV、歌手">
+				<a class="pc2" href="">
+					<img src="img/search.png">
+				</a>
+					
+				<span><a href="">登录</a></span>
+				<span class="sg"><a href="">注册</a></span>
+			</div>
+			</div>
+			<div class="second">
+				<div class="nav">
+					<ul>
+						<li>首页</li>
+						<li>歌单</li>
+						<li>歌手</li>
+						<li>榜单</li>
+						<li>分类</li>
+						<li>MV</li>
+						<li>电台</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div id="content">
+			<div class="songlist">
+					<div class="songlist-left">
+						<div class="list-left">
+							<h2 class="title">热门歌曲
+								<a class="more" href="">更多</a>
+								<span >
+									<a class="lt"  href="">&lt;</a>	
+									<a class="gt" href="">&gt;</a>
+								</span>
+							</h2>
+							<dl>
+								<dt>
+									<a href=""><img src="img/man.jpg">
+								</dt>
+								<dd>在吉他的世界里，如风般驰骋</dd>
+									</a>
+							</dl>
+							
+							<dl>
+								<dt>
+									<a href=""><img src="img/view1.png">
+								</dt>
+								<dd>How About That</dd>
+									</a>
+							</dl>
+							
+							<dl>
+								<a href=""><img src="img/girl.png">
+								</dt>
+								<dd>没有明天也要歌唱</dd>
+									</a>
+							</dl>
+							
+							<dl class="lastone">
+								<a href=""><img src="img/view2.png">
+								</dt>
+								<dd>Infinite Universe</dd>
+									</a>
+							</dl>
+							<dl class="lastsecond">
+								<dt>
+									<a href=""><img src="img/man1.jpg">
+								</dt>
+								<dd>每年今日，我还是会想起你</dd>
+									</a>
+							</dl>
+							<dl class="lastsecond">
+								<dt>
+									<a href=""><img src="img/man2.jpg">
+								</dt>
+								<dd>再闲也不能停止前进</dd>
+									</a>
+							</dl>
+							<dl class="lastsecond">
+								<dt>
+									<a href=""><img src="img/girl1.jpg">
+								</dt>
+								<dd>雨天的心事，在音乐里忘记</dd>
+									</a>
+							</dl>
+							<dl class="lastsecond-last">
+								<dt>
+									<a href=""><img src="img/man3.jpg">
+								</dt>
+								<dd>一个人走走停停，到处旅行</dd>
+									</a>
+							</dl>
+							
+						</div>
+						<div class="list-right">
+							<h2 class="title-right">分类听歌
+								<a class="more" href="">更多</a>
+							</h2>
+							<ul>
+								
+								<li><a class="tag" href="">情歌</a></li>
+								
+								<li><a class="tag" href="">红歌</a></li>
+							
+								<li><a class="tag-last" href="">劲爆</a></li>
+								<li><a class="tag" href="">天籁</a></li>
+								
+								<li><a class="tag" href="">经典老歌</a></li>
+								<li><a class="tag-last" href="">欧美</a></li>
+								
+								<li><a class="tag" href="">网络歌曲</a></li>
+								<li><a class="tag" href="">民谣</a></li>
+								<li><a class="tag-last" href="">90后</a></li>
+								<li><a class="tag" href="">儿歌</a></li>
+								<li><a class="tag" href="">抒情</a></li>
+								<li><a class="tag-last" href="">翻唱</a></li>
+							
+							</ul>
+							
+							<h2 class="title-botton">推荐电台
+								<a class="more" href="">更多</a>
+							</h2>
+							<ul>
+								<a  href="">
+									<li class="tah">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>随便听听</span>
+									</li>
+								</a>
+								<a  href="">
+									<li class="tah">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>运动</span></li>
+								</a>
+								<a  href="">
+									<li class="tah">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>甜蜜</span>
+									</li>
+								</a>
+								<a  href="">
+									<li class="tah lasth">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>工作</span>
+									</li>		
+								</a>
+								
+								<a  href="">
+									<li class="tah">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>店铺</span>
+									</li>
+								</a>
+								<a  href="">
+									<li class="tah">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>轻松</span></li>
+								</a>
+								<a  href="">
+									<li class="tah">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>低沉</span>
+									</li>
+								</a>
+								<a  href="">
+									<li class="tah lasth">
+										<img src="../../课件/Day2/作业/千峰简介/arrow.png"/>
+										<span>自在</span>
+									</li>		
+								</a>
+						</div>
+					</div>	
+			</div>
+			<div class="content-banner">
+				<div class="banner-one">
+					<a class="one-left" href="">&lt;</a>
+					<a class="one-right" href="">&gt;</a>
+				</div>
+				<div class=banner-left>
+					<img id="#"src="img/girl2.png" alt="" />
+				</div>				
+				<div class="banner">
+					<div class="banner1">
+						<img  id="s1" src="img/view1.png" alt="" />
+						<img  id="s2" src="img/view2.png" alt="" />
+						<img  id="s3" src="img/girl.png" alt="" />
+						<img  id="s4" src="img/man1.jpg" alt="" />
+						<img  id="s5" src="img/man2.jpg" alt="" />
+					</div>
+					<ul>
+						<a href="#s1">
+							<li>1</li>
+						</a>
+							<a href="#s2">
+							<li>2</li>
+						</a>
+						<a href="#s3">
+							<li>3</li>
+						</a>
+						<a href="#s4">
+							<li>4</li>
+						</a>
+						<a href="#s5">
+							<li>5</li>
+						</a>
+					</ul>
+				</div>
+				<div class=banner-right>
+					<img id="#"src="img/man3.jpg" alt="" />
+				</div>	
+			</div>
+			<div class="content-ranking">
+				<h2 class="rank">排行榜
+					<a href="">
+						<i class="more">更多</i>
+					</a>
+				</h2>
+				<div class="rank-title rank-nb">
+					<h2>
+						<a href="">
+							<i>新歌榜</i>
+						</a>
+						<img class="im" src="../../课件/Day2/作业/千峰简介/arrow.png">
+					</h2>
+					<div class="rank-first">
+						<span class="shunxu">01</span>
+						<img class="in" src="img/man1.jpg">
+						<a href="" title="歌曲-愿得一人心（《鹤吠华亭》）">
+							<span class="name">愿得一人心（《鹤吠华亭》）</span>
+						</a>
+						<a href="" title="歌手-周深">
+							<span class="name1">周深</span>
+						</a>
+						
+					</div>
+					<div>
+						<span class="shunxu">02</span>
+						<img class="in" src="img/man.jpg">
+						<a href="" title="歌曲-世间美好与你环环相扣">
+							<span class="name">世间美好与你环环相扣</span>
+						</a>
+						<a href="" title="歌手-陈芯">
+							<span class="name1">陈芯</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">03</span>
+						<img class="in" src="img/man2.jpg">
+						<a href="" title="歌曲-想见你想见你想见你（电视剧《想见你》片尾曲）
+">
+							<span class="name">
+								想见你想见你想见你（电视剧《想见你》片尾曲）
+							</span>
+						</a>
+						<a href="" title="歌手-八三天">
+							<span class="name1">八三天</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">04</span>
+						<img class="in" src="img/view2.png">
+						<a href="" title="歌曲-一生与你擦肩而过（正式版）">
+                    	
+							<span class="name">
+								一生与你擦肩而过（正式版）
+                    		</span>
+						</a>
+						<a href="" title="歌手-刘雨Key/欧米诺">
+							<span class="name1">刘雨Key/欧米诺</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">05</span>
+						<img class="in" src="img/view1.png">
+						<a href="" title="歌曲-这样也好">
+							<span class="name">这样也好</span>
+						</a>
+						<a href="" title="歌手-卫一名">
+							<span class="name1">卫一名</span>
+						</a>
+					</div>
+					<a href="">
+						<span>点击查看更多></span>
+					</a>
+				</div>
+				<div class="rank-title rank-nb1">
+					<h2 class="tupian1">
+						<a href="">
+							<i>网络歌曲榜</i>
+						</a>
+						<img class="ims" src="../../课件/Day2/作业/千峰简介/arrow.png">
+					</h2>
+					<div class="rank-first">
+						<span class="shunxu">01</span>
+						<img class="in" src="img/man1.jpg">
+						<a href="" title="歌曲-愿得一人心（《鹤吠华亭》）">
+							<span class="name">愿得一人心（《鹤吠华亭》）</span>
+						</a>
+						<a href="" title="歌手-周深">
+							<span class="name1">周深</span>
+						</a>
+						
+					</div>
+					<div>
+						<span class="shunxu">02</span>
+						<img class="in" src="img/man.jpg">
+						<a href="" title="歌曲-世间美好与你环环相扣">
+							<span class="name">世间美好与你环环相扣</span>
+						</a>
+						<a href="" title="歌手-陈芯">
+							<span class="name1">陈芯</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">03</span>
+						<img class="in" src="img/man2.jpg">
+						<a href="" title="歌曲-想见你想见你想见你（电视剧《想见你》片尾曲）
+">
+							<span class="name">
+								想见你想见你想见你（电视剧《想见你》片尾曲）
+							</span>
+						</a>
+						<a href="" title="歌手-八三天">
+							<span class="name1">八三天</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">04</span>
+						<img class="in" src="img/view2.png">
+						<a href="" title="歌曲-一生与你擦肩而过（正式版）">
+                    	
+							<span class="name">
+								一生与你擦肩而过（正式版）
+                    		</span>
+						</a>
+						<a href="" title="歌手-刘雨Key/欧米诺">
+							<span class="name1">刘雨Key/欧米诺</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">05</span>
+						<img class="in" src="img/view1.png">
+						<a href="" title="歌曲-这样也好">
+							<span class="name">这样也好</span>
+						</a>
+						<a href="" title="歌手-卫一名">
+							<span class="name1">卫一名</span>
+						</a>
+					</div>
+					<a href="">
+						<span>点击查看更多></span>
+					</a>	
+				</div>
+				<div class="rank-title rank-nb2">
+					<h2 class="tupian2">
+						<a href="">
+							<i>热歌榜</i>
+						</a>
+						<img class="im" src="../../课件/Day2/作业/千峰简介/arrow.png">
+					</h2>
+					<div class="rank-first">
+						<span class="shunxu">01</span>
+						<img class="in" src="img/man1.jpg">
+						<a href="" title="歌曲-愿得一人心（《鹤吠华亭》）">
+							<span class="name">愿得一人心（《鹤吠华亭》）</span>
+						</a>
+						<a href="" title="歌手-周深">
+							<span class="name1">周深</span>
+						</a>
+						
+					</div>
+					<div>
+						<span class="shunxu">02</span>
+						<img class="in" src="img/man.jpg">
+						<a href="" title="歌曲-世间美好与你环环相扣">
+							<span class="name">世间美好与你环环相扣</span>
+						</a>
+						<a href="" title="歌手-陈芯">
+							<span class="name1">陈芯</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">03</span>
+						<img class="in" src="img/man2.jpg">
+						<a href="" title="歌曲-想见你想见你想见你（电视剧《想见你》片尾曲）
+">
+							<span class="name">
+								想见你想见你想见你（电视剧《想见你》片尾曲）
+							</span>
+						</a>
+						<a href="" title="歌手-八三天">
+							<span class="name1">八三天</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">04</span>
+						<img class="in" src="img/view2.png">
+						<a href="" title="歌曲-一生与你擦肩而过（正式版）">
+                    	
+							<span class="name">
+								一生与你擦肩而过（正式版）
+                    		</span>
+						</a>
+						<a href="" title="歌手-刘雨Key/欧米诺">
+							<span class="name1">刘雨Key/欧米诺</span>
+						</a>
+					</div>
+					<div>
+						<span class="shunxu">05</span>
+						<img class="in" src="img/view1.png">
+						<a href="" title="歌曲-这样也好">
+							<span class="name">这样也好</span>
+						</a>
+						<a href="" title="歌手-卫一名">
+							<span class="name1">卫一名</span>
+						</a>
+					</div>
+					<a href="">
+						<span>点击查看更多></span>
+					</a>	
+				</div>
+			</div>
+			</div>
+		<div id="footer">
+			<div class="mount">
+				<div class="left">
+					<h4>下载客户端</h5>
+					<a href="">
+						<img src="img/pcban.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/mac.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/android.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/iphone.png" alt="" />
+					</a>
+				</div>
+				<div class="left">
+					<h4>关于音乐</h5>
+					<a href="">
+						<img src="img/pcban.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/mac.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/android.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/iphone.png" alt="" />
+					</a>
+				</div>
+				<div class="left last">
+					<h4>分享音乐</h5>
+					<a href="">
+						<img src="img/pcban.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/mac.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/android.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/iphone.png" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="botton">
+				<p>@2019 Qianqian 粤网文[2018]0902-359号</p>
+				<p>粤公网安备 44030502002309号 增值电信业务经营许可证：粵B2-20180819</p>
+				<p>
+					违法和不良信息举报电话: 010-84369708 转8012
+					<a href="">举报邮箱: jubao@taihe.com</a>
+					<a href="" target="_blank">反馈中心</a>
+				</p>
+			</div>
+			
+		</div>
+		</div>
+	</body>
+</html>
